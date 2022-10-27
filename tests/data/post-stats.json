@@ -1,0 +1,268 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "2f12edf92a5c",
+                "title": "New Box App Center (formally App Gallery) Launch",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 242,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 44,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 26,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 17,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "PROFILE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "medium.com/box-developer-blog/%E6%96%B0%E3%81%97%E3%81%84box-app-center-%E6%97%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC-%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9-1ea8934d48e6",
+                        "totalCount": 8,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "medium.com/box-developer-blog/new-box-app-center-formally-app-gallery-launch-2f12edf92a5c",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 5,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "medium.com/box-developer-blog/stories/published",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "IOS",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "www.bing.com",
+                        "totalCount": 2,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "www.bing.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "mail.google.com",
+                        "totalCount": 2,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "GMAIL",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "daatc-100522.service.pub.digitalartscloud.com",
+                        "totalCount": 2,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://daatc-100522.service.pub.digitalartscloud.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "directory-veolia.appspot.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://directory-veolia.appspot.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "Android device (not Medium app)",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "android-app://com.google.android.gm/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 1,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "paper.dropbox.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://paper.dropbox.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "2f12edf92a5c",
+                        "sourceIdentifier": "search-dra.dt.dbankcloud.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://search-dra.dt.dbankcloud.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 364,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]
