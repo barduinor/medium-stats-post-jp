@@ -1,0 +1,133 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "93f5f4e2d24b",
+                "title": "Box Sign APIの更新",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "93f5f4e2d24b",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 166,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "93f5f4e2d24b",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 25,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "93f5f4e2d24b",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 10,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "93f5f4e2d24b",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 6,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "HOMEPAGE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "93f5f4e2d24b",
+                        "sourceIdentifier": "medium.com/@ytaniguchi",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "PROFILE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "93f5f4e2d24b",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "IOS",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "93f5f4e2d24b",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 2,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "93f5f4e2d24b",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 2,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 216,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

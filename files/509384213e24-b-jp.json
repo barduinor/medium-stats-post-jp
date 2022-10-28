@@ -1,0 +1,51 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "509384213e24",
+                "title": "コンテンツプレビューUI Elementの注釈機能",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "509384213e24",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "509384213e24",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 2,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

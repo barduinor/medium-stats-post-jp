@@ -1,0 +1,327 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "922f47299fd",
+                "title": "Using Box UI Elements and Python (Part 1)",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "Medium emails and notifications",
+                        "totalCount": 134,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 131,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "androidApp",
+                        "totalCount": 98,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "ANDROID",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 97,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "HOMEPAGE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "medium.comhome",
+                        "totalCount": 79,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 38,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 27,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "barbosa-rmv.medium.com/using-box-ui-elements-and-python-sdk-part-1-922f47299fd",
+                        "totalCount": 25,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "medium.com/box-developer-blog/using-box-ui-elements-and-python-part-3-9dcba671fa9e",
+                        "totalCount": 14,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "medium.com/box-developer-blog/using-box-ui-elements-and-python-part-2-fd5362d37c1d",
+                        "totalCount": 14,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "linkedin.com",
+                        "totalCount": 13,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "LINKEDIN",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "Android device (not Medium app)",
+                        "totalCount": 11,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "android-app://com.linkedin.android/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "github.com/barduinor/ui-elements-python",
+                        "totalCount": 10,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://github.com/barduinor/ui-elements-python",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 4,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "IOS",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "www.bing.com",
+                        "totalCount": 2,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "www.bing.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "app.iterable.com",
+                        "totalCount": 2,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://app.iterable.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "deref-mail.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://deref-mail.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "app.raindrop.io",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://app.raindrop.io/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "search.brave.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://search.brave.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "922f47299fd",
+                        "sourceIdentifier": "duckduckgo.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://duckduckgo.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 703,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

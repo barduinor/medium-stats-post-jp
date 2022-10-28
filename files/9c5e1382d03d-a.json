@@ -1,0 +1,31 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "9c5e1382d03d",
+                "dailyStats": [
+                    {
+                        "periodStartedAt": 1666828800000,
+                        "views": 23,
+                        "internalReferrerViews": 4,
+                        "memberTtr": 15,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666915200000,
+                        "views": 36,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    }
+                ],
+                "__typename": "Post",
+                "earnings": {
+                    "dailyEarnings": [],
+                    "lastCommittedPeriodStartedAt": 1666828800000,
+                    "__typename": "PostEarnings"
+                }
+            }
+        }
+    }
+]

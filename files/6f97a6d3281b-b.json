@@ -1,0 +1,230 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "6f97a6d3281b",
+                "title": "Congratulations to our 2022 Box Hackathon for Good winning teams",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 67,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "mkt.box.com",
+                        "totalCount": 15,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://mkt.box.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "linkedin.com",
+                        "totalCount": 13,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "LINKEDIN",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 5,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 4,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 4,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "Medium emails and notifications",
+                        "totalCount": 4,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "facebook.com",
+                        "totalCount": 3,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "FACEBOOK",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 2,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "Android device (not Medium app)",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "android-app://com.linkedin.android/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "IOS",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "nexlogica.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://www.nexlogica.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "app.raindrop.io",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://app.raindrop.io/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6f97a6d3281b",
+                        "sourceIdentifier": "www.bing.com",
+                        "totalCount": 1,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "www.bing.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 125,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

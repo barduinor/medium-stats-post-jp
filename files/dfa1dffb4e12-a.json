@@ -1,0 +1,675 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "dfa1dffb4e12",
+                "dailyStats": [
+                    {
+                        "periodStartedAt": 1657584000000,
+                        "views": 61,
+                        "internalReferrerViews": 21,
+                        "memberTtr": 304,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1657670400000,
+                        "views": 40,
+                        "internalReferrerViews": 22,
+                        "memberTtr": 256,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1657756800000,
+                        "views": 11,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1657843200000,
+                        "views": 54,
+                        "internalReferrerViews": 39,
+                        "memberTtr": 565,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1657929600000,
+                        "views": 99,
+                        "internalReferrerViews": 88,
+                        "memberTtr": 1104,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658016000000,
+                        "views": 26,
+                        "internalReferrerViews": 23,
+                        "memberTtr": 457,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658102400000,
+                        "views": 30,
+                        "internalReferrerViews": 20,
+                        "memberTtr": 125,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658188800000,
+                        "views": 19,
+                        "internalReferrerViews": 12,
+                        "memberTtr": 332,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658275200000,
+                        "views": 14,
+                        "internalReferrerViews": 7,
+                        "memberTtr": 243,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658361600000,
+                        "views": 11,
+                        "internalReferrerViews": 7,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658448000000,
+                        "views": 9,
+                        "internalReferrerViews": 4,
+                        "memberTtr": 91,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658534400000,
+                        "views": 5,
+                        "internalReferrerViews": 4,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658620800000,
+                        "views": 3,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658707200000,
+                        "views": 12,
+                        "internalReferrerViews": 5,
+                        "memberTtr": 58,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658793600000,
+                        "views": 8,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658880000000,
+                        "views": 10,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 29,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1658966400000,
+                        "views": 6,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1659052800000,
+                        "views": 6,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1659225600000,
+                        "views": 1,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1659312000000,
+                        "views": 2,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1659484800000,
+                        "views": 4,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1659571200000,
+                        "views": 1,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1659657600000,
+                        "views": 2,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1659744000000,
+                        "views": 1,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1660003200000,
+                        "views": 3,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1660089600000,
+                        "views": 1,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1660176000000,
+                        "views": 1,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1660262400000,
+                        "views": 3,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 1,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1660521600000,
+                        "views": 2,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 77,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1660608000000,
+                        "views": 2,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1660694400000,
+                        "views": 5,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1660867200000,
+                        "views": 1,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661040000000,
+                        "views": 3,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 61,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661126400000,
+                        "views": 3,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661212800000,
+                        "views": 7,
+                        "internalReferrerViews": 4,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661299200000,
+                        "views": 3,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661385600000,
+                        "views": 6,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661472000000,
+                        "views": 1,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 9,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661558400000,
+                        "views": 1,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661731200000,
+                        "views": 2,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661817600000,
+                        "views": 8,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661904000000,
+                        "views": 5,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1661990400000,
+                        "views": 5,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1662076800000,
+                        "views": 4,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1662249600000,
+                        "views": 1,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1662336000000,
+                        "views": 3,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1662422400000,
+                        "views": 5,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1662508800000,
+                        "views": 9,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1662595200000,
+                        "views": 4,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1662681600000,
+                        "views": 3,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663027200000,
+                        "views": 3,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663113600000,
+                        "views": 10,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663200000000,
+                        "views": 4,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 67,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663286400000,
+                        "views": 5,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663459200000,
+                        "views": 1,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663545600000,
+                        "views": 2,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663632000000,
+                        "views": 8,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 1,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663718400000,
+                        "views": 7,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663804800000,
+                        "views": 12,
+                        "internalReferrerViews": 5,
+                        "memberTtr": 383,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663891200000,
+                        "views": 4,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1663977600000,
+                        "views": 2,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664150400000,
+                        "views": 3,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664236800000,
+                        "views": 8,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 31,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664323200000,
+                        "views": 4,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 37,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664409600000,
+                        "views": 5,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664496000000,
+                        "views": 4,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664582400000,
+                        "views": 2,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664668800000,
+                        "views": 2,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664841600000,
+                        "views": 10,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1664928000000,
+                        "views": 4,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665014400000,
+                        "views": 5,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665100800000,
+                        "views": 11,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 26,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665187200000,
+                        "views": 1,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665273600000,
+                        "views": 4,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665360000000,
+                        "views": 3,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665446400000,
+                        "views": 2,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665532800000,
+                        "views": 6,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665619200000,
+                        "views": 7,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 240,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665705600000,
+                        "views": 5,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665792000000,
+                        "views": 2,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 13,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665878400000,
+                        "views": 1,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1665964800000,
+                        "views": 6,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666051200000,
+                        "views": 11,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666137600000,
+                        "views": 7,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666224000000,
+                        "views": 7,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666310400000,
+                        "views": 1,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666396800000,
+                        "views": 4,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666483200000,
+                        "views": 2,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666569600000,
+                        "views": 6,
+                        "internalReferrerViews": 2,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666656000000,
+                        "views": 16,
+                        "internalReferrerViews": 7,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666742400000,
+                        "views": 6,
+                        "internalReferrerViews": 1,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666828800000,
+                        "views": 7,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1666915200000,
+                        "views": 9,
+                        "internalReferrerViews": 3,
+                        "memberTtr": 0,
+                        "__typename": "DailyPostStat"
+                    },
+                    {
+                        "periodStartedAt": 1659830400000,
+                        "views": 0,
+                        "internalReferrerViews": 0,
+                        "memberTtr": 119,
+                        "__typename": "DailyPostStat"
+                    }
+                ],
+                "__typename": "Post",
+                "earnings": {
+                    "dailyEarnings": [],
+                    "lastCommittedPeriodStartedAt": 1666828800000,
+                    "__typename": "PostEarnings"
+                }
+            }
+        }
+    }
+]

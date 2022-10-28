@@ -1,0 +1,103 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "4d121b93dcfe",
+                "title": "Box Platformの使用",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "4d121b93dcfe",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 20,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "4d121b93dcfe",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 8,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "4d121b93dcfe",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 7,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "4d121b93dcfe",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 4,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "4d121b93dcfe",
+                        "sourceIdentifier": "search.yahoo.co.jp",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://search.yahoo.co.jp/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "4d121b93dcfe",
+                        "sourceIdentifier": "medium.com/search",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 33,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,192 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "7f6c78b86695",
+                "title": "Box UI ElementsとPythonの使用 (パート1)",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 45,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 39,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 18,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 13,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "notes.services.box.com",
+                        "totalCount": 5,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://notes.services.box.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-ui-elements%E3%81%A8python%E3%81%AE%E4%BD%BF%E7%94%A8-%E3%83%91%E3%83%BC%E3%83%882-9b0206ceb512",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-ui-elements%E3%81%A8python%E3%81%AE%E4%BD%BF%E7%94%A8-%E3%83%91%E3%83%BC%E3%83%883-ad0cbefc50ee",
+                        "totalCount": 4,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "medium.com/box-developer-blog/using-box-ui-elements-and-python-part-3-9dcba671fa9e",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "www.bing.com",
+                        "totalCount": 2,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "www.bing.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "medium.com/@ytaniguchi",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "PROFILE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "7f6c78b86695",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "ANDROID",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 136,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

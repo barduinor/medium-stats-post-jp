@@ -1,0 +1,184 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "3b117de84667",
+                "title": "新しい編集可能な共有リンクAPI",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 53,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 14,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 5,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "medium.com/box-developer-blog/%25E6%2596%25B0%25E3%2581%2597%25E3%2581%2584%25E7%25B7%25A8%25E9%259B%2586%25E5%258F%25AF%25E8%2583%25BD%25E3%2581%25AA%25E5%2585%25B1%25E6%259C%2589%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25AFapi-3b117de84667",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "medium.com/box-developer-blog/new-user-avatar-apis-bfd47ea7367d",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 1,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "medium.com/box-developer-blog/%E6%96%B0%E3%81%97%E3%81%84%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BCapi-778804b4327b",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "medium.com/box-developer-blog/new-editable-shared-links-api-19e73d689efb",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 1,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3b117de84667",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-sign-api%E3%81%AE%E6%9B%B4%E6%96%B0-93f5f4e2d24b",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 79,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

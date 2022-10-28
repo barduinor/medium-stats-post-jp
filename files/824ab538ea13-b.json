@@ -1,0 +1,257 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "824ab538ea13",
+                "title": "Getting started with Box for Salesforce development: Part 1",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 170,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 150,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "Android device (not Medium app)",
+                        "totalCount": 113,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "android-app://com.google.android.googlequicksearchbox/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "Medium emails and notifications",
+                        "totalCount": 29,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "linkedin.com",
+                        "totalCount": 28,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "LINKEDIN",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 28,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "HOMEPAGE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "Medium's social media accounts",
+                        "totalCount": 22,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "SOCIAL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "androidApp",
+                        "totalCount": 18,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "ANDROID",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 14,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "medium.comhome",
+                        "totalCount": 13,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "iosApp",
+                        "totalCount": 9,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "IOS",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 4,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "mail.google.com",
+                        "totalCount": 4,
+                        "type": "PLATFORM",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": "GMAIL",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "l.workplace.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://l.workplace.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 1,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "824ab538ea13",
+                        "sourceIdentifier": "www.bing.com",
+                        "totalCount": 1,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "www.bing.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 601,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

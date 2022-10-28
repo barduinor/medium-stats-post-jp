@@ -1,0 +1,148 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "977959faf0dc",
+                "title": "Automate user provisioning with the Box CLI",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 85,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 6,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "medium.com/box-developer-blog/congratulations-to-our-2022-box-hackathon-for-good-winning-teams-6f97a6d3281b",
+                        "totalCount": 3,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 3,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "HOMEPAGE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "statics.teams.cdn.office.net",
+                        "totalCount": 2,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://statics.teams.cdn.office.net/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "medium.com/box-developer-blog/get-started-with-the-box-cli-in-less-than-five-minutes-3fe2f70f879a",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 2,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 1,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "977959faf0dc",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 1,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 104,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "3293061a66c5",
+                "title": "Box Python SDKとOAuth 2.0の使用",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "3293061a66c5",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 101,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3293061a66c5",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 49,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3293061a66c5",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 16,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3293061a66c5",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 4,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3293061a66c5",
+                        "sourceIdentifier": "search.yahoo.co.jp",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://search.yahoo.co.jp/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "3293061a66c5",
+                        "sourceIdentifier": "www.bing.com",
+                        "totalCount": 1,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "www.bing.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 172,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

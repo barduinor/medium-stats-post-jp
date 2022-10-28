@@ -1,0 +1,218 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "ad0cbefc50ee",
+                "title": "Box UI ElementsとPythonの使用 (パート3)",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 32,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 10,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 3,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 2,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 2,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com/box-developer-blog/getting-started-with-box-python-sdk-and-jwt-32722b1e4d67",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-ui-elements%E3%81%A8python%E3%81%AE%E4%BD%BF%E7%94%A8-%E3%83%91%E3%83%BC%E3%83%882-9b0206ceb512",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-ui-elements%E3%81%A8python%E3%81%AE%E4%BD%BF%E7%94%A8-%E3%83%91%E3%83%BC%E3%83%881-7f6c78b86695",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-python-sdk%E3%81%A8jwt%E3%81%AE%E4%BD%BF%E7%94%A8-7eea2cde60e0",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com/@ytaniguchi",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-python-sdk%E3%81%A8oauth-2-0%E3%81%AE%E4%BD%BF%E7%94%A8-3293061a66c5",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "ad0cbefc50ee",
+                        "sourceIdentifier": "medium.com/box-developer-blog/search",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 56,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,176 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "6258891d95c4",
+                "title": "Let’s talk about integrating Box",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 68,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "linkedin.com",
+                        "totalCount": 37,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "LINKEDIN",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 13,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "Android device (not Medium app)",
+                        "totalCount": 8,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "android-app://com.linkedin.android/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "medium.com/@pchristensenPSE",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "PROFILE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 3,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "Medium emails and notifications",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "medium.com/box-developer-blog/getting-started-with-box-ui-elements-using-react-dfa1dffb4e12",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 2,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "6258891d95c4",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 1,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 144,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

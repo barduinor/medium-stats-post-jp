@@ -1,0 +1,165 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "19e73d689efb",
+                "title": "New Editable Shared Links API",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 71,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 18,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 10,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 8,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "HOMEPAGE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "medium.com/@anovotny_12970",
+                        "totalCount": 3,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "Medium emails and notifications",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 2,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "medium.com/box-developer-blog/%E6%96%B0%E3%81%97%E3%81%84box-app-center-%E6%97%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC-%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9-1ea8934d48e6",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "jira.inside-box.net",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://jira.inside-box.net/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "19e73d689efb",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 1,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 117,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

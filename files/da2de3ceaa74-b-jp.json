@@ -1,0 +1,139 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "da2de3ceaa74",
+                "title": "Box CLIを使用したユーザープロビジョニングの自動化",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "da2de3ceaa74",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 20,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "da2de3ceaa74",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "da2de3ceaa74",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 2,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "da2de3ceaa74",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-platform%E3%81%AE%E3%81%95%E3%82%89%E3%81%AA%E3%82%8B%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95-4482302d0e1",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "da2de3ceaa74",
+                        "sourceIdentifier": "162.159.152.4:6080",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "http://162.159.152.4:6080/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "da2de3ceaa74",
+                        "sourceIdentifier": "medium.com/box-developer-blog/congratulations-to-our-2022-box-hackathon-for-good-winning-teams-6f97a6d3281b",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "da2de3ceaa74",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-for-salesforce%E9%96%8B%E7%99%BA%E3%81%AE%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89-%E3%83%91%E3%83%BC%E3%83%881-bec2724a73a4",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "da2de3ceaa74",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 1,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 31,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

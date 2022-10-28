@@ -1,0 +1,129 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "bec2724a73a4",
+                "title": "Box for Salesforce開発の入門ガイド: パート1",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "bec2724a73a4",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 66,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "bec2724a73a4",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 17,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "bec2724a73a4",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 8,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "bec2724a73a4",
+                        "sourceIdentifier": "qiita.com",
+                        "totalCount": 8,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://qiita.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "bec2724a73a4",
+                        "sourceIdentifier": "medium.com/@ytaniguchi",
+                        "totalCount": 8,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "PROFILE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "bec2724a73a4",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 7,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "bec2724a73a4",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 5,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "bec2724a73a4",
+                        "sourceIdentifier": "Android device (not Medium app)",
+                        "totalCount": 4,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "android-app://com.slack/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 115,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

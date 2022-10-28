@@ -1,0 +1,99 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "597d5d18efd9",
+                "title": "LAST CALL to sign up for our Hackathon For Good",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "597d5d18efd9",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 32,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "597d5d18efd9",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 7,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "597d5d18efd9",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 2,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "597d5d18efd9",
+                        "sourceIdentifier": "Medium emails and notifications",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "597d5d18efd9",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 1,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "597d5d18efd9",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 1,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 43,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

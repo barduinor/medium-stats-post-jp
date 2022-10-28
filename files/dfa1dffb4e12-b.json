@@ -1,0 +1,302 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "dfa1dffb4e12",
+                "title": "Getting started with Box UI Elements using REACT",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 200,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 140,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "Medium emails and notifications",
+                        "totalCount": 120,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 76,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "HOMEPAGE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "medium.comhome",
+                        "totalCount": 49,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "androidApp",
+                        "totalCount": 48,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "ANDROID",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "linkedin.com",
+                        "totalCount": 34,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "LINKEDIN",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 32,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "mail.google.com",
+                        "totalCount": 19,
+                        "type": "PLATFORM",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "EMAIL",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": "GMAIL",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "github.com/barduinor/ui-elements-demo",
+                        "totalCount": 11,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://github.com/barduinor/ui-elements-demo",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "Android device (not Medium app)",
+                        "totalCount": 7,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "android-app://com.linkedin.android/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "www.bing.com",
+                        "totalCount": 7,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "www.bing.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "betterprogramming.pub",
+                        "totalCount": 3,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://betterprogramming.pub/how-to-build-a-fullstack-app-with-next-js-prisma-postgres-and-fastify-5de189870413",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 2,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "github.com",
+                        "totalCount": 2,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://github.com/barduinor/ui-elements-demo/blob/main/README.md",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "javascript.plainenglish.io",
+                        "totalCount": 2,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://javascript.plainenglish.io/how-to-easily-reuse-react-components-e9c8a9466038",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "ibm.webex.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://ibm.webex.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "yandex.ru",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://yandex.ru/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "dfa1dffb4e12",
+                        "sourceIdentifier": "duckduckgo.com",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://duckduckgo.com/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 755,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]

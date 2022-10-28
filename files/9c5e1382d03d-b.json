@@ -1,0 +1,161 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "9c5e1382d03d",
+                "title": "Annotations in Content Preview UI Element",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 31,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "linkedin.com",
+                        "totalCount": 14,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "LINKEDIN",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "mail.google.com",
+                        "totalCount": 6,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "GMAIL",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 3,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "ACTIVITY",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "Unidentified feed reader",
+                        "totalCount": 2,
+                        "type": "RSS",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "medium.com/me/notifications",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "medium.com/box-developer-blog/box-platform%E3%81%AE%E3%81%95%E3%82%89%E3%81%AA%E3%82%8B%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95-4482302d0e1",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "Android device (not Medium app)",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "android-app://com.google.android.gm/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "9c5e1382d03d",
+                        "sourceIdentifier": "medium.com/box-developer-blog/stories/published",
+                        "totalCount": 1,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 59,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]
