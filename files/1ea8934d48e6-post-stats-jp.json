@@ -1,0 +1,167 @@
+[
+    {
+        "data": {
+            "post": {
+                "id": "1ea8934d48e6",
+                "title": "新しいBox App Center (旧アプリギャラリー) のリリース",
+                "__typename": "Post",
+                "referrers": [
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "direct",
+                        "totalCount": 90,
+                        "type": "DIRECT",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "google.com",
+                        "totalCount": 54,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "google.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "medium.com/box-developer-blog",
+                        "totalCount": 27,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "COLLECTION",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "medium.com",
+                        "totalCount": 18,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "HOMEPAGE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "twitter.com",
+                        "totalCount": 6,
+                        "type": "PLATFORM",
+                        "internal": null,
+                        "search": null,
+                        "site": null,
+                        "platform": "TWITTER",
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "medium.com/box-developer-blog/new-box-app-center-formally-app-gallery-launch-2f12edf92a5c",
+                        "totalCount": 5,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "POST",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "medium.com/@ksonoda",
+                        "totalCount": 3,
+                        "type": "INTERNAL",
+                        "internal": {
+                            "postId": null,
+                            "collectionId": null,
+                            "profileId": null,
+                            "type": "PROFILE",
+                            "__typename": "InternalReferrer"
+                        },
+                        "search": null,
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "service.smt.docomo.ne.jp",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://service.smt.docomo.ne.jp/portal/search/web/result.html?q=%25E3%2582%25AE%25E3%2583%25A3%25E3%2583%25A9%25E3%2583%25AA%25E3%2583%25BC+%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "websearch.rakuten.co.jp",
+                        "totalCount": 1,
+                        "type": "SITE",
+                        "internal": null,
+                        "search": null,
+                        "site": {
+                            "href": "https://websearch.rakuten.co.jp/",
+                            "title": null,
+                            "__typename": "SiteReferrer"
+                        },
+                        "platform": null,
+                        "__typename": "Referrer"
+                    },
+                    {
+                        "postId": "1ea8934d48e6",
+                        "sourceIdentifier": "www.bing.com",
+                        "totalCount": 1,
+                        "type": "SEARCH",
+                        "internal": null,
+                        "search": {
+                            "domain": "www.bing.com",
+                            "keywords": [],
+                            "__typename": "SearchReferrer"
+                        },
+                        "site": null,
+                        "platform": null,
+                        "__typename": "Referrer"
+                    }
+                ],
+                "totalStats": {
+                    "views": 206,
+                    "__typename": "SummaryPostStat"
+                }
+            }
+        }
+    }
+]
