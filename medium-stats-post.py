@@ -23,9 +23,6 @@ def scan(path):
     output = scan_files(path)
     for line in output:
         click.echo(line)
-        # click.echo('')
-    
-
 
 # @main.command()
 # @click.argument('id')
@@ -40,5 +37,5 @@ def scan(path):
 
 
 if __name__ == "__main__":
-    # main()
-    main(['scan'])
+    main()
+    # main(['scan'])
