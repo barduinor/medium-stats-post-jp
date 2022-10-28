@@ -80,7 +80,7 @@ class Stats:
         """ dump the data to csv """
         data_list = []
         for stat in self.dailyStats:
-            data_line = f"{self.id},{self.title},{stat['periodStartedAt']},{stat['views']},{stat['memberTtr']}"
+            data_line = f"{self.id},{self.title},{date.fromtimestamp(stat['periodStartedAt']//1000)},{stat['views']},{stat['memberTtr']}"
             data_list.append(data_line)
         return data_list
 

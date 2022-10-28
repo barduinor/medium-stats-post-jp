@@ -2,7 +2,8 @@
 
 import click
 
-from files import files_read
+from files import files_list
+from scan import scan_files
 
 __author__ = "RB"
 
@@ -18,8 +19,12 @@ def main():
 def scan(path):
     """ This function will scan the files in the given path
     and print the stats of the medium post"""
-    click.echo(f'Scanning files in the path: {path}')
-    files_read(path)
+    # click.echo(f'Scanning files in the path: {path}')
+    output = scan_files(path)
+    for line in output:
+        click.echo(line)
+        # click.echo('')
+    
 
 
 # @main.command()

@@ -19,7 +19,7 @@ def test_stats_object_output_data():
     stats.load_file('tests/data/daily-stats.json')
     data = stats.dump_data()
     
-    assert data[0] == '2f12edf92a5c,New Box App Center (formally App Gallery) Launch,1649721600000,8,0'
+    assert data[0] == '2f12edf92a5c,New Box App Center (formally App Gallery) Launch,2022-04-11,8,0'
 
 def test_stats_object_output_header():
     """ test the stats object output """
