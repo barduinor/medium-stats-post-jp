@@ -1,8 +1,6 @@
 """ processor for medium stats post """
 
 import click
-
-from files import files_list
 from scan import scan_files
 
 __author__ = "RB"
