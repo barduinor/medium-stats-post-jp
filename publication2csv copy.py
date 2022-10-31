@@ -22,6 +22,9 @@ def scan(path):
     for line in output:
         click.echo(line)
 
+@main.command()
+@click.option('--',default='./files', help = 'path of the files to be scaned')
+
 # @main.command()
 # @click.argument('id')
 # def get(id):
