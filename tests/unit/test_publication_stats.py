@@ -10,11 +10,11 @@ def test_publication_story():
     pub_name = Config.PUBLICATION
     pub_sid = Config.SID
     pub_uid = Config.UID
-    start = datetime.today()
-    stop = start - timedelta(days=1)
+    date_to = datetime.today()
+    date_from = date_to - timedelta(days=10)
 
     # should return an object of type PublicationStats
-    publication = PublicationStats(pub_name, pub_sid, pub_uid, start, stop, None)
+    publication = PublicationStats(pub_name, pub_sid, pub_uid, date_from, date_to, None)
     assert publication is not None
     assert type(publication) == PublicationStats
 
@@ -65,3 +65,23 @@ def test_publication_story():
     )
     assert line_1st != header
     assert line_nth != header
+
+    # Aggregate Events Views
+    # Should return publication views
+    pub_views = publication.get_publication_views()
+    assert pub_views is not None
+    assert len(pub_views) > 0  # should have at least one view
+
+    # Aggregate Events Visitors
+    # Should return publication visitors
+    pub_visitors = publication.get_publication_visitors()
+    assert pub_visitors is not None
+    assert len(pub_visitors) > 0  # should have at least one visitor
+
+    # should return article events
+    article_events = publication.get_article_events()
+    assert article_events is not None
+
+    # should return article referrers
+    article_referrers = publication.get_article_referrers()
+    assert article_referrers is not None

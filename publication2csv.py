@@ -14,16 +14,16 @@ from datetime import date, timedelta
 @click.option("--sid", type=str, default="", help="your Medium session id from cookie")
 @click.option("--uid", type=str, default="", help="your Medium user id from cookie")
 @click.option(
-    "--start",
+    "--date-to",
     type=click.DateTime(["%Y-%m-%d"]),
     default=str(date.today()),
-    help="start date in iso format",
+    help="from date in iso format",
 )
 @click.option(
-    "--stop",
+    "--date_from",
     type=click.DateTime(["%Y-%m-%d"]),
-    default=str(date.today()),
-    help="stop date in iso format",
+    default=str(date.today() - timedelta(days=30)),
+    help="to date in iso format",
 )
 def main(publication_name, folder, sid, uid, start, stop):
     """
@@ -38,8 +38,8 @@ def main(publication_name, folder, sid, uid, start, stop):
     uid = Config.UID if uid == "" else uid
     folder = Config.OUTPUT if folder == "" else folder
 
-    start = date.now() if start == "" else start
-    stop = (date.now() - timedelta(days=1)) if stop == "" else stop
+    date_to = date.now() if date_from == "" else start
+    date_from = (date_to - timedelta(days=30)) if stop == "" else stop
 
     now = None
     allready_utc = False
@@ -51,15 +51,31 @@ def main(publication_name, folder, sid, uid, start, stop):
     # click.echo("User id: " + uid)
 
     publication = PublicationStats(
-        publication_name, sid, uid, start, stop, now, allready_utc
+        publication_name, sid, uid, date_from, date_to, now, allready_utc
     )
 
-    click.echo("Getting story stats")
+    click.echo("Getting story summary")
     csv = publication.get_story_stats_csv()
     filename = f"{publication_name}_{start.strftime('%Y%m%d')}_{stop.strftime('%Y%m%d')}_story.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")
+
+    click.echo("Getting publication views")
+    pub_views = publication.get_publication_views()
+    print(f"Publication views: {pub_views}")
+
+    click.echo("Getting publication visitors")
+    pub_visitors = publication.get_publication_visitors()
+    print(f"Publication visitors: {pub_visitors}")
+
+    click.echo("Getting article events")
+    article_events = publication.get_article_events()
+    print(f"Article events: {article_events}")
+
+    click.echo("Getting article referrers")
+    article_referrers = publication.get_article_referrers()
+    print(f"Article referrers: {article_referrers}")
 
 
 if __name__ == "__main__":
