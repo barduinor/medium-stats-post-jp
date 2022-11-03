@@ -156,6 +156,12 @@ def test_post_events():
     assert article_events is not None
     assert len(article_events) > 0  # should have at least one article
 
+    # Should return the date first published in iso format
+    firstPublishedAt = datetime.fromisoformat(
+        article_events["data"]["post"][0]["firstPublishedAt"]
+    )
+    assert type(firstPublishedAt) is datetime
+
     # Should return the date in iso format
     periodStartedAt = datetime.fromisoformat(
         article_events["data"]["post"][0]["dailyStats"][0]["periodStartedAt"]
@@ -187,7 +193,7 @@ def test_post_events():
 
     assert (
         header
-        == "periodStartedAt,views,internalReferrerViews,memberTtr,id,daysSincePublished,title,creatorId"
+        == "periodStartedAt,views,internalReferrerViews,memberTtr,id,daysSincePublished,title,creatorId,firstPublishedAt"
     )
     assert line_1st != header
     assert line_nth != header
@@ -213,6 +219,12 @@ def test_post_referrers():
     # Should return the creator id of the article
     assert article_referrers["data"]["post"][0]["creatorId"] is not None
 
+    # Should return the date first published in iso format
+    firstPublishedAt = datetime.fromisoformat(
+        article_referrers["data"]["post"][0]["firstPublishedAt"]
+    )
+    assert type(firstPublishedAt) is datetime
+
     # Should return article/post referrers in csv format
     csv = publication.get_article_referrers_csv()
     header = csv[0]
@@ -221,7 +233,7 @@ def test_post_referrers():
 
     assert (
         header
-        == "postId,sourceIdentifier,totalCount,type,internal,search,site,platform,internal.postId,internal.collectionId,internal.profileId,internal.type,site.href,site.title,search.domain,search.keywords,title,creatorId"
+        == "postId,sourceIdentifier,totalCount,type,internal,search,site,platform,internal.postId,internal.collectionId,internal.profileId,internal.type,site.href,site.title,search.domain,search.keywords,title,creatorId,firstPublishedAt"
     )
     assert line_1st != header
     assert line_nth != header
