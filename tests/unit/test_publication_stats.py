@@ -170,6 +170,12 @@ def test_post_events():
     for i in range(10):
         assert article_events["data"]["post"][i]["daysSincePublished"] >= 0
 
+    # Should return the title of the article
+    assert article_events["data"]["post"][0]["title"] is not None
+
+    # Should return the creator id of the article
+    assert article_events["data"]["post"][0]["creatorId"] is not None
+
     # Should return article/post events in csv format
     csv = publication.get_article_events_csv()
     header = csv[0]
@@ -178,7 +184,7 @@ def test_post_events():
 
     assert (
         header
-        == "periodStartedAt,views,internalReferrerViews,memberTtr,id,daysSincePublished"
+        == "periodStartedAt,views,internalReferrerViews,memberTtr,id,daysSincePublished,title,creatorId"
     )
     assert line_1st != header
     assert line_nth != header
@@ -198,6 +204,12 @@ def test_post_referrers():
     assert article_referrers is not None
     assert len(article_referrers) > 0  # should have at least one article
 
+    # Should return the title of the article
+    assert article_referrers["data"]["post"][0]["title"] is not None
+
+    # Should return the creator id of the article
+    assert article_referrers["data"]["post"][0]["creatorId"] is not None
+
     # Should return article/post referrers in csv format
     csv = publication.get_article_referrers_csv()
     header = csv[0]
@@ -206,7 +218,7 @@ def test_post_referrers():
 
     assert (
         header
-        == "postId,sourceIdentifier,totalCount,type,internal,search,site,platform,internal.postId,internal.collectionId,internal.profileId,internal.type,site.href,site.title,search.domain,search.keywords"
+        == "postId,sourceIdentifier,totalCount,type,internal,search,site,platform,internal.postId,internal.collectionId,internal.profileId,internal.type,site.href,site.title,search.domain,search.keywords,title,creatorId"
     )
     assert line_1st != header
     assert line_nth != header

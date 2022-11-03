@@ -65,7 +65,8 @@ class PublicationStats(object):
         "search.domain",
         "search.keywords",
         # "search.__typename",
-        # "title",
+        "title",
+        "creatorId",
     ]
 
     article_event_columns = [
@@ -77,6 +78,8 @@ class PublicationStats(object):
         # "__typename",
         "id",
         "daysSincePublished",
+        "title",
+        "creatorId",
     ]
 
     publication: StatGrabberPublication = None
@@ -195,7 +198,9 @@ class PublicationStats(object):
         )
         self._fix_article_events_dates()
         self._fix_article_events_read_time()
-        self._add_days_since_published()
+        self._add_days_since_published_to_article_events()
+        self._add_title_to_article_events()
+        self._add_creator_to_article_events()
 
     def _fix_article_events_dates(self):
         """Convert the dates in the article events from unix to iso"""
@@ -211,7 +216,7 @@ class PublicationStats(object):
             for event in post["dailyStats"]:
                 event["memberTtr"] = event["memberTtr"] / 1000.0
 
-    def _add_days_since_published(self):
+    def _add_days_since_published_to_article_events(self):
         """Add the days since published to the article events"""
 
         for post in self.article_events["data"]["post"]:
@@ -219,6 +224,20 @@ class PublicationStats(object):
             post["daysSincePublished"] = self.story_stats[post["id"]][
                 "daysSincePublished"
             ]
+
+    def _add_title_to_article_events(self):
+        """Add the title to the article events"""
+
+        for post in self.article_events["data"]["post"]:
+            # get date from story stats
+            post["title"] = self.story_stats[post["id"]]["title"]
+
+    def _add_creator_to_article_events(self):
+        """Add the creator to the article events"""
+
+        for post in self.article_events["data"]["post"]:
+            # get date from story stats
+            post["creatorId"] = self.story_stats[post["id"]]["creatorId"]
 
     def _load_article_referrers(self):
         """Load the article referrers"""
@@ -228,6 +247,14 @@ class PublicationStats(object):
         self.article_referrers = self.publication.get_all_story_stats(
             self.story_stats.keys(), type_="referrer"
         )
+        self._add_creator_to_referrers()
+
+    def _add_creator_to_referrers(self):
+        """Add the creator to the referrers"""
+
+        for post in self.article_referrers["data"]["post"]:
+            # get date from story stats
+            post["creatorId"] = self.story_stats[post["id"]]["creatorId"]
 
     def get_story_stats(self) -> dict:
         """return the publication stats json object"""
@@ -356,7 +383,7 @@ class PublicationStats(object):
         df = json_normalize(
             self.article_events["data"]["post"],
             record_path=["dailyStats"],
-            meta=["id", "daysSincePublished"],
+            meta=["id", "daysSincePublished", "title", "creatorId"],
         )
 
         csv_str = df.to_csv(
@@ -390,7 +417,7 @@ class PublicationStats(object):
         df = json_normalize(
             self.article_referrers["data"]["post"],
             record_path=["referrers"],
-            # meta=["title"],
+            meta=["title", "creatorId"],
             errors="ignore",
         )
 
