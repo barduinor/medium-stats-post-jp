@@ -69,7 +69,7 @@ b67e930cf614,box-cli-adds-proxy-support,Box CLI adds proxy support,254dec687066,
 efb11d39cd9e,new-slack-box-quick-start-guide,New Slack+Box quick-start guide,7d391ec318be,a995c24848a3,0,599,304,2020-07-30T16:53:11,2020-08-06T12:46:01,0,2020,2,3,0,0,False,90,0,PostStat,819
 c23519d5d092,integrating-box-metadata-querying-inside-ui-elements-with-react,Integrating Box metadata querying inside UI Elements with React,7d391ec318be,a995c24848a3,5,1278,812,2020-07-30T17:30:17,2020-08-03T12:21:01,0,2020,3,5,54,0,False,185,0,PostStat,822
 5a3e3d548ba0,announcing-the-new-box-platform-changelog,Announcing the new Box Platform changelog,254dec687066,a995c24848a3,1,202,123,2020-07-23T12:20:46,2020-07-28T11:59:59,0,2020,2,4,1,0,False,79,0,PostStat,828
-a625b5e514b8,new-zip-download-apis,New Zip Download APIs,254dec687066,a995c24848a3,2,857,566,2020-07-23T12:09:57,2020-07-24T09:35:17,0,2020,2,9,15,0,False,123,0,PostStat,832
+a625b5e514b8,new-zip-download-apis,New Zip Download APIs,254dec687066,a995c24848a3,2,858,567,2020-07-23T12:09:57,2020-07-24T09:35:17,0,2020,2,9,15,0,False,123,0,PostStat,832
 8c0f7e22fbcf,new-sso-and-metadata-documentation,New SSO  and metadata documentation,7d391ec318be,a995c24848a3,6,754,544,2020-04-29T18:12:08,2020-05-06T12:06:01,0,2020,2,10,56,0,False,184,0,PostStat,911
 a2f9be59f7d7,upcoming-developer-track-at-box-virtual-summit,Upcoming: Developer Track at Box Virtual Summit,254dec687066,a995c24848a3,1,338,232,2020-03-19T13:49:09,2020-03-20T12:01:01,0,2020,2,3,6,0,False,71,0,PostStat,958
 1888ec79bac8,new-metadata-tasks-and-mobile-guides,"New metadata, tasks, and mobile guides",254dec687066,a995c24848a3,2,626,444,2020-03-02T09:31:59,2020-03-05T15:15:32,0,2020,2,6,11,0,False,134,0,PostStat,973

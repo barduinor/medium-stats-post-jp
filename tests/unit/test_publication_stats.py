@@ -168,7 +168,10 @@ def test_post_events():
 
     # Should return the days since publication
     for i in range(10):
-        assert article_events["data"]["post"][i]["daysSincePublished"] >= 0
+        assert (
+            article_events["data"]["post"][i]["dailyStats"][0]["daysSincePublished"]
+            >= -1
+        )
 
     # Should return the title of the article
     assert article_events["data"]["post"][0]["title"] is not None

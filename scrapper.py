@@ -226,7 +226,7 @@ class PublicationStats(object):
             )
             for daily_stat in post["dailyStats"]:
                 post_date = datetime.fromisoformat(daily_stat["periodStartedAt"])
-                post["daysSincePublished"] = (post_date - publish_date).days
+                daily_stat["daysSincePublished"] = (post_date - publish_date).days
 
     def _add_title_to_article_events(self):
         """Add the title to the article events"""
@@ -386,7 +386,7 @@ class PublicationStats(object):
         df = json_normalize(
             self.article_events["data"]["post"],
             record_path=["dailyStats"],
-            meta=["id", "daysSincePublished", "title", "creatorId"],
+            meta=["id", "title", "creatorId"],
         )
 
         csv_str = df.to_csv(
