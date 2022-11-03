@@ -22,7 +22,7 @@ from datetime import date, timedelta
 @click.option(
     "--date_from",
     type=click.DateTime(["%Y-%m-%d"]),
-    default=str(date.today() - timedelta(days=30)),
+    default=str(date.today() - timedelta(days=2190)),
     help="to date in iso format",
 )
 def main(publication_name, folder, sid, uid, date_from, date_to):
@@ -47,8 +47,8 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
     click.echo("Getting publication: " + publication_name)
     click.echo("Start date: " + str(date_from))
     click.echo("Stop date: " + str(date_to))
-    click.echo("Session id: " + sid)
-    click.echo("User id: " + uid)
+    # click.echo("Session id: " + sid)
+    # click.echo("User id: " + uid)
 
     publication = PublicationStats(
         publication_name, sid, uid, date_from, date_to, now, allready_utc
@@ -56,7 +56,7 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
 
     click.echo("Getting story summary")
     csv = publication.get_story_stats_csv()
-    filename = f"{publication_name}_{date_from.strftime('%Y%m%d')}_{date_to.strftime('%Y%m%d')}_story.csv"
+    filename = f"{publication_name}-story.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")
@@ -69,21 +69,21 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
 
     click.echo("Getting publication events")
     csv = publication.get_aggregate_events_csv()
-    filename = f"{publication_name}_{date_from.strftime('%Y%m%d')}_{date_to.strftime('%Y%m%d')}_events.csv"
+    filename = f"{publication_name}-events.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")
 
     click.echo("Getting article events")
     csv = publication.get_article_events_csv()
-    filename = f"{publication_name}_{date_from.strftime('%Y%m%d')}_{date_to.strftime('%Y%m%d')}_article_events.csv"
+    filename = f"{publication_name}-article_events.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")
 
     click.echo("Getting article referrers")
     csv = publication.get_article_referrers_csv()
-    filename = f"{publication_name}_{date_from.strftime('%Y%m%d')}_{date_to.strftime('%Y%m%d')}_article_referrers.csv"
+    filename = f"{publication_name}-article_referrers.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")

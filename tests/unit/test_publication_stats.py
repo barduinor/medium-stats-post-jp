@@ -11,7 +11,7 @@ def test_publication_stats_object_get() -> PublicationStats:
     pub_sid = Config.SID
     pub_uid = Config.UID
     date_to = datetime.today()
-    date_from = date_to - timedelta(days=2)
+    date_from = date_to - timedelta(days=2000)
 
     # should return an object of type PublicationStats
     publication = PublicationStats(pub_name, pub_sid, pub_uid, date_from, date_to, None)
@@ -33,6 +33,7 @@ def test_stories_summary():
     # Stories Summary
     # should return the publication summary stats json object
     story_stats = publication.get_story_stats()
+    story_stats = list(story_stats.values())
     assert story_stats is not None
     assert story_stats[0]["type"] == "PostStat"
 
@@ -41,6 +42,10 @@ def test_stories_summary():
     published = datetime.fromisoformat(story_stats[0]["firstPublishedAt"])
     assert type(created) is datetime
     assert type(published) is datetime
+
+    # Should include the days since publication
+    for i in range(10):
+        assert story_stats[i]["daysSincePublished"] >= 0
 
     # Should return data in csv format
     csv = publication.get_story_stats_csv()
@@ -71,7 +76,8 @@ def test_stories_summary():
         + "internalReferrerViews,"
         + "friendsLinkViews,"
         # + "primaryTopic,"+
-        + "type"
+        + "type,"
+        + "daysSincePublished"
     )
     assert line_1st != header
     assert line_nth != header
@@ -160,13 +166,20 @@ def test_post_events():
     memberTtr = article_events["data"]["post"][0]["dailyStats"][0]["memberTtr"]
     assert type(memberTtr) is float
 
+    # Should return the days since publication
+    for i in range(10):
+        assert article_events["data"]["post"][i]["daysSincePublished"] >= 0
+
     # Should return article/post events in csv format
     csv = publication.get_article_events_csv()
     header = csv[0]
     line_1st = csv[1]
     line_nth = csv[-1]
 
-    assert header == "periodStartedAt,views,internalReferrerViews,memberTtr,id"
+    assert (
+        header
+        == "periodStartedAt,views,internalReferrerViews,memberTtr,id,daysSincePublished"
+    )
     assert line_1st != header
     assert line_nth != header
 

@@ -1,6 +1,6 @@
 """ medium screper methods"""
 
-from datetime import datetime
+from datetime import datetime, date
 from medium_stats.scraper import StatGrabberPublication
 from datetime import datetime
 from pandas import DataFrame, json_normalize
@@ -37,6 +37,7 @@ class PublicationStats(object):
         "friendsLinkViews",
         # "primaryTopic",
         "type",
+        "daysSincePublished",
     ]
 
     referrer_columns = [
@@ -75,10 +76,11 @@ class PublicationStats(object):
         "memberTtr",
         # "__typename",
         "id",
+        "daysSincePublished",
     ]
 
     publication: StatGrabberPublication = None
-    article_list: list = None
+    # article_list: list = None
 
     # Stories Summary
     story_stats: dict = None
@@ -127,18 +129,32 @@ class PublicationStats(object):
 
     def _load_story_stats(self):
         """Load the story stats"""
-        self.story_stats = self.publication.get_all_story_overview()
+        story_stats_list = self.publication.get_all_story_overview()
+
+        # Convert the list to a dict indexed by the post id
+        self.story_stats = dict()
+        for story in story_stats_list:
+            post_id = story["postId"]
+            self.story_stats[post_id] = story
         self._fix_story_stats_dates()
+        self._add_days_since_published_to_story_stats()
 
     def _fix_story_stats_dates(self):
         """Convert the dates in the story stats from unix to iso"""
-        for story in self.story_stats:
+        for story in self.story_stats.values():
             story["createdAt"] = datetime.fromtimestamp(
                 story["createdAt"] // 1000
             ).isoformat()
             story["firstPublishedAt"] = datetime.fromtimestamp(
                 story["firstPublishedAt"] // 1000
             ).isoformat()
+
+    def _add_days_since_published_to_story_stats(self):
+        """Add the days since published to the story stats"""
+        for story in self.story_stats.values():
+            story["daysSincePublished"] = (
+                date.today() - datetime.fromisoformat(story["firstPublishedAt"]).date()
+            ).days
 
     def _load_view_stats(self):
         """Load the view stats"""
@@ -173,10 +189,13 @@ class PublicationStats(object):
     def _load_article_events(self):
         """Load the article events"""
 
-        self.article_list = self.publication.get_article_ids(self.story_stats)
-        self.article_events = self.publication.get_all_story_stats(self.article_list)
+        # self.article_list = self.publication.get_article_ids(self.story_stats.values())
+        self.article_events = self.publication.get_all_story_stats(
+            self.story_stats.keys()
+        )
         self._fix_article_events_dates()
         self._fix_article_events_read_time()
+        self._add_days_since_published()
 
     def _fix_article_events_dates(self):
         """Convert the dates in the article events from unix to iso"""
@@ -192,13 +211,22 @@ class PublicationStats(object):
             for event in post["dailyStats"]:
                 event["memberTtr"] = event["memberTtr"] / 1000.0
 
+    def _add_days_since_published(self):
+        """Add the days since published to the article events"""
+
+        for post in self.article_events["data"]["post"]:
+            # get date from story stats
+            post["daysSincePublished"] = self.story_stats[post["id"]][
+                "daysSincePublished"
+            ]
+
     def _load_article_referrers(self):
         """Load the article referrers"""
 
-        self.article_list = self.publication.get_article_ids(self.story_stats)
+        # self.article_list = self.publication.get_article_ids(self.story_stats)
         # "type" param must be either "view_read" or "referrer"')
         self.article_referrers = self.publication.get_all_story_stats(
-            self.article_list, type_="referrer"
+            self.story_stats.keys(), type_="referrer"
         )
 
     def get_story_stats(self) -> dict:
@@ -220,7 +248,7 @@ class PublicationStats(object):
         # convert the json to a dataframe
         # data frame is a bit overkill for this, but others have more complex json
         # and this is a good way to keep it consistent
-        df = DataFrame(self.story_stats)
+        df = DataFrame(self.story_stats.values())
 
         # convert the dataframe to csv
         csv_str = df.to_csv(index=False, header=True, columns=self.story_columns)
@@ -328,7 +356,7 @@ class PublicationStats(object):
         df = json_normalize(
             self.article_events["data"]["post"],
             record_path=["dailyStats"],
-            meta=["id"],
+            meta=["id", "daysSincePublished"],
         )
 
         csv_str = df.to_csv(
