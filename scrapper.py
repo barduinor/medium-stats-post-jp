@@ -220,10 +220,13 @@ class PublicationStats(object):
         """Add the days since published to the article events"""
 
         for post in self.article_events["data"]["post"]:
-            # get date from story stats
-            post["daysSincePublished"] = self.story_stats[post["id"]][
-                "daysSincePublished"
-            ]
+            # claculate how old was the article on the date this was collected
+            publish_date = datetime.fromisoformat(
+                self.story_stats[post["id"]]["firstPublishedAt"]
+            )
+            for daily_stat in post["dailyStats"]:
+                post_date = datetime.fromisoformat(daily_stat["periodStartedAt"])
+                post["daysSincePublished"] = (post_date - publish_date).days
 
     def _add_title_to_article_events(self):
         """Add the title to the article events"""

@@ -2,7 +2,7 @@
 
 from scrapper import PublicationStats
 from config import Config
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
 
 def test_publication_stats_object_get() -> PublicationStats:
