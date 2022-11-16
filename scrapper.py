@@ -4,7 +4,6 @@ from datetime import datetime, date
 from medium_stats.scraper import StatGrabberPublication
 from datetime import datetime
 from pandas import DataFrame, json_normalize
-from requests import HTTPError
 
 
 class PublicationStats(object):
