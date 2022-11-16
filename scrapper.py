@@ -228,7 +228,10 @@ class PublicationStats(object):
             )
             for daily_stat in post["dailyStats"]:
                 post_date = datetime.fromisoformat(daily_stat["periodStartedAt"])
-                daily_stat["daysSincePublished"] = (post_date - publish_date).days
+                days_since_published = (
+                    (post_date - publish_date).days if post_date > publish_date else 0
+                )
+                daily_stat["daysSincePublished"] = days_since_published
 
     def _add_title_to_article_events(self):
         """Add the title to the article events"""
