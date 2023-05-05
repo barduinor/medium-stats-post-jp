@@ -22,7 +22,8 @@ from datetime import date, timedelta
 @click.option(
     "--date_from",
     type=click.DateTime(["%Y-%m-%d"]),
-    default=str(date.today() - timedelta(days=2190)),
+    default=str(date.today() - timedelta(days=1825)),
+    # default=str(date.today() - timedelta(days=2190)),
     help="to date in iso format",
 )
 def main(publication_name, folder, sid, uid, date_from, date_to):
@@ -39,7 +40,8 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
     folder = Config.OUTPUT if folder == "" else folder
 
     date_to = date.now() if date_from == "" else date_to
-    date_from = (date_to - timedelta(days=30)) if date_from == "" else date_from
+    date_from = (date_to - timedelta(days=30)
+                 ) if date_from == "" else date_from
 
     now = None
     allready_utc = False
