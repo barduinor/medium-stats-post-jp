@@ -22,8 +22,12 @@ from datetime import date, timedelta
 @click.option(
     "--date_from",
     type=click.DateTime(["%Y-%m-%d"]),
-    default=str(date.today() - timedelta(days=1825)),
-    # default=str(date.today() - timedelta(days=2190)),
+    # default=str(date.today() - timedelta(days=90)),  # 90 days
+    # default=str(date.today() - timedelta(days=365)),  # 1 year
+    # default=str(date.today() - timedelta(days=1095)), # 3 years
+    # default=str(date.today() - timedelta(days=1460)), # 4 years
+    # default=str(date.today() - timedelta(days=1825)), # 5 years
+    default=str(date.today() - timedelta(days=2190)),  # 6 years
     help="to date in iso format",
 )
 def main(publication_name, folder, sid, uid, date_from, date_to):
@@ -40,8 +44,7 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
     folder = Config.OUTPUT if folder == "" else folder
 
     date_to = date.now() if date_from == "" else date_to
-    date_from = (date_to - timedelta(days=30)
-                 ) if date_from == "" else date_from
+    date_from = (date_to - timedelta(days=30)) if date_from == "" else date_from
 
     now = None
     allready_utc = False
@@ -98,8 +101,28 @@ if __name__ == "__main__":
         [
             "box-developer-blog",
             "--sid",
-            "1:HcNhNqsCQtMb98qgTELLbkvPsJe8u1XfLTx83ajIfdi0KzSQwJ9/ilSgHalk8GWF",
+            "1:6KArG9WeNRPNcb4rAgU3+FVPAE59/CuRgyi0sjm5HeaWBOuXIpr0pxXGxVX8ugrE",
             "--uid",
             "19badb385e7",
         ]
     )
+
+
+# Original
+# [
+#     "box-developer-blog",
+#     "--sid",
+#     "1:HcNhNqsCQtMb98qgTELLbkvPsJe8u1XfLTx83ajIfdi0KzSQwJ9/ilSgHalk8GWF",
+#     "--uid",
+#     "19badb385e7",
+# ]
+
+
+# new
+# [
+#     "box-developer-blog",
+#     "--sid",
+#     "1:6KArG9WeNRPNcb4rAgU3+FVPAE59/CuRgyi0sjm5HeaWBOuXIpr0pxXGxVX8ugrE",
+#     "--uid",
+#     "19badb385e7",
+# ]
