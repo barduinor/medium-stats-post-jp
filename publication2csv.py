@@ -8,9 +8,7 @@ from datetime import date, timedelta
 
 @click.command()
 @click.argument("publication_name", type=str, required=True)
-@click.option(
-    "--folder", type=str, default="output", help="folder to save the csv file"
-)
+@click.option("--folder", type=str, default="output", help="folder to save the csv file")
 @click.option("--sid", type=str, default="", help="your Medium session id from cookie")
 @click.option("--uid", type=str, default="", help="your Medium user id from cookie")
 @click.option(
@@ -55,9 +53,7 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
     # click.echo("Session id: " + sid)
     # click.echo("User id: " + uid)
 
-    publication = PublicationStats(
-        publication_name, sid, uid, date_from, date_to, now, allready_utc
-    )
+    publication = PublicationStats(publication_name, sid, uid, date_from, date_to, now, allready_utc)
 
     click.echo("Getting story summary")
     csv = publication.get_story_stats_csv()
@@ -99,10 +95,12 @@ if __name__ == "__main__":
     # main(["box-developer-blog"])
     main(
         [
-            "box-developer-blog",
+            "box-developer-japan-blog",
             "--sid",
-            "1:6KArG9WeNRPNcb4rAgU3+FVPAE59/CuRgyi0sjm5HeaWBOuXIpr0pxXGxVX8ugrE",
+            # "1:6KArG9WeNRPNcb4rAgU3+FVPAE59/CuRgyi0sjm5HeaWBOuXIpr0pxXGxVX8ugrE",
+            "1:NFak+3ufoBlzun9pllxb+jTuxIhLWaZyCDwuG895QLpsAGi7epKfgzZ2A2YglHDv",
             "--uid",
+            # "19badb385e7",
             "19badb385e7",
         ]
     )
