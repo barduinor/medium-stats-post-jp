@@ -2,8 +2,8 @@
 
 from datetime import datetime, date
 from medium_stats.scraper import StatGrabberPublication
-from datetime import datetime
 from pandas import DataFrame, json_normalize
+from otosky import build_summary_stats_payload
 
 
 class PublicationStats(object):
@@ -133,25 +133,53 @@ class PublicationStats(object):
 
     def _load_story_stats(self):
         """Load the story stats"""
-        story_stats_list = self.publication.get_all_story_overview()
+        # story_stats_list = self.publication.get_all_story_overview()
+
+        # get summary stats for all publication articles
+        gql_endpoint = "https://medium.com/_/graphql"
+        payload = build_summary_stats_payload(self.publication.id)
+        response = self.publication.session.post(gql_endpoint, json=payload)
+        response.raise_for_status()
+        story_stats_list = response.json()
 
         # Convert the list to a dict indexed by the post id
         self.story_stats = dict()
-        for story in story_stats_list:
-            post_id = story["postId"]
-            self.story_stats[post_id] = story
+        for story in story_stats_list["data"]["publication"]["publicationPostsConnection"]["edges"]:
+            post_id = story["node"]["id"]
+            self.story_stats[post_id] = {}
+            # Map to columns format
+            self.story_stats[post_id]["postId"] = post_id
+            self.story_stats[post_id]["slug"] = story.get("node").get("uniqueSlug")
+            # # self.story_stats[post_id]["previewImage"] =
+            self.story_stats[post_id]["title"] = story["node"]["title"]
+            self.story_stats[post_id]["creatorId"] = story["node"]["creator"]["id"]
+            self.story_stats[post_id]["collectionId"] = story["node"]["collection"]["id"]
+            self.story_stats[post_id]["upvotes"] = 0
+            self.story_stats[post_id]["views"] = story["node"]["totalStats"]["views"]
+            self.story_stats[post_id]["reads"] = story["node"]["totalStats"]["reads"]
+            self.story_stats[post_id]["createdAt"] = story["listedAt"]
+            self.story_stats[post_id]["firstPublishedAt"] = story["listedAt"]
+            self.story_stats[post_id]["visibility"] = story["node"]["visibility"]
+            self.story_stats[post_id]["firstPublishedAtBucket"] = story["listedAt"]
+            self.story_stats[post_id]["readingTime"] = story["node"]["readingTime"]
+            self.story_stats[post_id]["syndicatedViews"] = 0
+            self.story_stats[post_id]["claps"] = 0
+            self.story_stats[post_id]["updateNotificationSubscribers"] = 0
+            self.story_stats[post_id]["isSeries"] = story["node"]["isSeries"]
+            self.story_stats[post_id]["internalReferrerViews"] = 0
+            self.story_stats[post_id]["friendsLinkViews"] = 0
+            # # self.story_stats[post_id]["primaryTopic"] =
+            self.story_stats[post_id]["type"] = "PostStat"
+            self.story_stats[post_id]["daysSincePublished"] = 0
+
         self._fix_story_stats_dates()
         self._add_days_since_published_to_story_stats()
 
     def _fix_story_stats_dates(self):
         """Convert the dates in the story stats from unix to iso"""
         for story in self.story_stats.values():
-            story["createdAt"] = datetime.fromtimestamp(
-                story["createdAt"] // 1000
-            ).isoformat()
-            story["firstPublishedAt"] = datetime.fromtimestamp(
-                story["firstPublishedAt"] // 1000
-            ).isoformat()
+            story["createdAt"] = datetime.fromtimestamp(story["createdAt"] // 1000).isoformat()
+            story["firstPublishedAt"] = datetime.fromtimestamp(story["firstPublishedAt"] // 1000).isoformat()
 
     def _add_days_since_published_to_story_stats(self):
         """Add the days since published to the story stats"""
@@ -169,9 +197,7 @@ class PublicationStats(object):
     def _fix_view_stats_dates(self):
         """Convert the dates in the view stats from unix to iso"""
         for view in self.view_stats:
-            view["timeWindowStart"] = datetime.fromtimestamp(
-                view["timeWindowStart"] // 1000
-            ).isoformat()
+            view["timeWindowStart"] = datetime.fromtimestamp(view["timeWindowStart"] // 1000).isoformat()
 
     def _fix_view_stats_read_time(self):
         """Convert the read time in the view stats from milliseconds to seconds"""
@@ -194,9 +220,7 @@ class PublicationStats(object):
         """Load the article events"""
 
         # self.article_list = self.publication.get_article_ids(self.story_stats.values())
-        self.article_events = self.publication.get_all_story_stats(
-            self.story_stats.keys()
-        )
+        self.article_events = self.publication.get_all_story_stats(self.story_stats.keys())
         self._fix_article_events_dates()
         self._fix_article_events_read_time()
         self._add_days_since_published_to_article_events()
@@ -223,14 +247,10 @@ class PublicationStats(object):
 
         for post in self.article_events["data"]["post"]:
             # claculate how old was the article on the date this was collected
-            publish_date = datetime.fromisoformat(
-                self.story_stats[post["id"]]["firstPublishedAt"]
-            )
+            publish_date = datetime.fromisoformat(self.story_stats[post["id"]]["firstPublishedAt"])
             for daily_stat in post["dailyStats"]:
                 post_date = datetime.fromisoformat(daily_stat["periodStartedAt"])
-                days_since_published = (
-                    (post_date - publish_date).days if post_date > publish_date else 0
-                )
+                days_since_published = (post_date - publish_date).days if post_date > publish_date else 0
                 daily_stat["daysSincePublished"] = days_since_published
 
     def _add_title_to_article_events(self):
@@ -339,9 +359,9 @@ class PublicationStats(object):
         # mash up the visitors
         for visitor in self.visitor_stats:
             if visitor["timeWindowStart"] in self.publication_events:
-                self.publication_events[visitor["timeWindowStart"]][
+                self.publication_events[visitor["timeWindowStart"]]["dailyUniqueVisitors"] = visitor[
                     "dailyUniqueVisitors"
-                ] = visitor["dailyUniqueVisitors"]
+                ]
             else:
                 self.publication_events[visitor["timeWindowStart"]] = {
                     "dailyUniqueVisitors": visitor["dailyUniqueVisitors"]
@@ -374,9 +394,7 @@ class PublicationStats(object):
             event_date = key
             views = value["views"] if "views" in value else 0
             ttr = value["ttr"] if "ttr" in value else 0
-            daily_unique_visitors = (
-                value["dailyUniqueVisitors"] if "dailyUniqueVisitors" in value else ""
-            )
+            daily_unique_visitors = value["dailyUniqueVisitors"] if "dailyUniqueVisitors" in value else ""
             csv.append(f"{event_date},{views},{ttr},{daily_unique_visitors}")
 
         return csv
