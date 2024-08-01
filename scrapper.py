@@ -158,9 +158,9 @@ class PublicationStats(object):
             self.story_stats[post_id]["views"] = story["node"]["totalStats"]["views"]
             self.story_stats[post_id]["reads"] = story["node"]["totalStats"]["reads"]
             self.story_stats[post_id]["createdAt"] = story["listedAt"]
-            self.story_stats[post_id]["firstPublishedAt"] = story["listedAt"]
+            self.story_stats[post_id]["firstPublishedAt"] = story["node"]["firstPublishedAt"]
             self.story_stats[post_id]["visibility"] = story["node"]["visibility"]
-            self.story_stats[post_id]["firstPublishedAtBucket"] = story["listedAt"]
+            self.story_stats[post_id]["firstPublishedAtBucket"] = story["node"]["firstPublishedAt"]
             self.story_stats[post_id]["readingTime"] = story["node"]["readingTime"]
             self.story_stats[post_id]["syndicatedViews"] = 0
             self.story_stats[post_id]["claps"] = 0

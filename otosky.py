@@ -63,6 +63,7 @@ def build_summary_stats_payload(publication_id: str):
     }
     fragment StoryStatsTableRow_post on Post {
       id
+      firstPublishedAt
       firstBoostedAt
       isLocked
       totalStats {
