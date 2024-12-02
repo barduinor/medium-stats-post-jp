@@ -414,6 +414,63 @@ def build_summary_stats_payload(publication_id: str):
     }
 
 
+def build_blog_events_payload(publication_id: str, start: datetime, stop: datetime):
+    # start = stop - timedelta(months=11)
+
+    return {
+        "operationName": "PublicationMonthlyStoryStatsTimeseriesQuery",
+        "variables": {
+            "input": {
+                "ref": {"id": publication_id},
+                "startTime": int(start.timestamp()) * 1000,
+                "endTime": int(stop.timestamp()) * 1000,
+            }
+        },
+        "query": """
+                        query PublicationMonthlyStoryStatsTimeseriesQuery($input: PublicationAggregateStatsInput!) {
+                            publicationAggregateStats(input: $input) {
+                                __typename
+                                ... on AggregatePostTimeseriesStats {
+                                ...MonthlyStoryStats_aggregatePostTimeseriesStats
+                                __typename
+                                }
+                            }
+                            }
+
+                            fragment MonthlyStoryStats_aggregatePostTimeseriesStats on AggregatePostTimeseriesStats {
+                            totalStats {
+                                ...MonthlyStoryStatsTotals_postStats
+                                __typename
+                            }
+                            points {
+                                ...MonthlyStoryStatsChart_postStatsPoint
+                                __typename
+                            }
+                            __typename
+                            }
+
+                            fragment MonthlyStoryStatsTotals_postStats on PostStats {
+                            viewers
+                            readers
+                            __typename
+                            }
+
+                            fragment MonthlyStoryStatsChart_postStatsPoint on PostStatsPoint {
+                            timestamp
+                            stats {
+                                total {
+                                viewers
+                                readers
+                                __typename
+                                }
+                                __typename
+                            }
+                            __typename
+                            }
+                    """,
+    }
+
+
 def get_article_ids(data: dict) -> list[str]:
     articles = data["data"]["publication"]["publicationPostsConnection"]["edges"]
     return [article["node"]["id"] for article in articles]
@@ -445,7 +502,9 @@ def main():
     base_export_path = Path(args.output_dir) / "stats_exports" / args.slug
     base_export_path.mkdir(parents=True, exist_ok=True)
 
-    pub = StatGrabberPublication(slug=args.slug, sid=args.sid, uid=args.uid, start=start, stop=stop)
+    pub = StatGrabberPublication(
+        slug=args.slug, sid=args.sid, uid=args.uid, start=start, stop=stop
+    )
 
     # get publication views & visitors (like the stats landing page)
     views = pub.get_events(type_="views")

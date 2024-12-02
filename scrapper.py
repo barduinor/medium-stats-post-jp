@@ -3,7 +3,7 @@
 from datetime import datetime, date
 from medium_stats.scraper import StatGrabberPublication
 from pandas import DataFrame, json_normalize
-from otosky import build_summary_stats_payload
+from otosky import build_summary_stats_payload, build_blog_events_payload
 
 
 class PublicationStats(object):
@@ -96,6 +96,8 @@ class PublicationStats(object):
     article_events: dict = None
     # Post Referrers
     article_referrers: dict = None
+    # Blog Stats
+    blog_stats_viewers_readers: dict = None
 
     def __init__(
         self,
@@ -144,7 +146,9 @@ class PublicationStats(object):
 
         # Convert the list to a dict indexed by the post id
         self.story_stats = dict()
-        for story in story_stats_list["data"]["publication"]["publicationPostsConnection"]["edges"]:
+        for story in story_stats_list["data"]["publication"][
+            "publicationPostsConnection"
+        ]["edges"]:
             post_id = story["node"]["id"]
             self.story_stats[post_id] = {}
             # Map to columns format
@@ -153,14 +157,20 @@ class PublicationStats(object):
             # # self.story_stats[post_id]["previewImage"] =
             self.story_stats[post_id]["title"] = story["node"]["title"]
             self.story_stats[post_id]["creatorId"] = story["node"]["creator"]["id"]
-            self.story_stats[post_id]["collectionId"] = story["node"]["collection"]["id"]
+            self.story_stats[post_id]["collectionId"] = story["node"]["collection"][
+                "id"
+            ]
             self.story_stats[post_id]["upvotes"] = 0
             self.story_stats[post_id]["views"] = story["node"]["totalStats"]["views"]
             self.story_stats[post_id]["reads"] = story["node"]["totalStats"]["reads"]
             self.story_stats[post_id]["createdAt"] = story["listedAt"]
-            self.story_stats[post_id]["firstPublishedAt"] = story["node"]["firstPublishedAt"]
+            self.story_stats[post_id]["firstPublishedAt"] = story["node"][
+                "firstPublishedAt"
+            ]
             self.story_stats[post_id]["visibility"] = story["node"]["visibility"]
-            self.story_stats[post_id]["firstPublishedAtBucket"] = story["node"]["firstPublishedAt"]
+            self.story_stats[post_id]["firstPublishedAtBucket"] = story["node"][
+                "firstPublishedAt"
+            ]
             self.story_stats[post_id]["readingTime"] = story["node"]["readingTime"]
             self.story_stats[post_id]["syndicatedViews"] = 0
             self.story_stats[post_id]["claps"] = 0
@@ -178,8 +188,12 @@ class PublicationStats(object):
     def _fix_story_stats_dates(self):
         """Convert the dates in the story stats from unix to iso"""
         for story in self.story_stats.values():
-            story["createdAt"] = datetime.fromtimestamp(story["createdAt"] // 1000).isoformat()
-            story["firstPublishedAt"] = datetime.fromtimestamp(story["firstPublishedAt"] // 1000).isoformat()
+            story["createdAt"] = datetime.fromtimestamp(
+                story["createdAt"] // 1000
+            ).isoformat()
+            story["firstPublishedAt"] = datetime.fromtimestamp(
+                story["firstPublishedAt"] // 1000
+            ).isoformat()
 
     def _add_days_since_published_to_story_stats(self):
         """Add the days since published to the story stats"""
@@ -187,6 +201,27 @@ class PublicationStats(object):
             story["daysSincePublished"] = (
                 date.today() - datetime.fromisoformat(story["firstPublishedAt"]).date()
             ).days
+
+    def _load_blog_stats_viewer_readers(self):
+        """Load the view stats"""
+        # get summary stats for all publication articles
+        gql_endpoint = "https://medium.com/_/graphql"
+        payload = build_blog_events_payload(
+            self.publication.id, self.date_from, self.date_to
+        )
+        response = self.publication.session.post(gql_endpoint, json=payload)
+        response.raise_for_status()
+        view_stats_list = response.json()
+
+        self.blog_stats_viewers_readers = dict()
+        for day in view_stats_list["data"]["publicationAggregateStats"]["points"]:
+            timeWindowStart = datetime.fromtimestamp(
+                day["timestamp"] / 1000
+            ).isoformat()
+            self.blog_stats_viewers_readers[timeWindowStart] = {
+                "viewers": day["stats"]["total"]["viewers"],
+                "readers": day["stats"]["total"]["readers"],
+            }
 
     def _load_view_stats(self):
         """Load the view stats"""
@@ -197,7 +232,9 @@ class PublicationStats(object):
     def _fix_view_stats_dates(self):
         """Convert the dates in the view stats from unix to iso"""
         for view in self.view_stats:
-            view["timeWindowStart"] = datetime.fromtimestamp(view["timeWindowStart"] // 1000).isoformat()
+            view["timeWindowStart"] = datetime.fromtimestamp(
+                view["timeWindowStart"] // 1000
+            ).isoformat()
 
     def _fix_view_stats_read_time(self):
         """Convert the read time in the view stats from milliseconds to seconds"""
@@ -220,7 +257,9 @@ class PublicationStats(object):
         """Load the article events"""
 
         # self.article_list = self.publication.get_article_ids(self.story_stats.values())
-        self.article_events = self.publication.get_all_story_stats(self.story_stats.keys())
+        self.article_events = self.publication.get_all_story_stats(
+            self.story_stats.keys()
+        )
         self._fix_article_events_dates()
         self._fix_article_events_read_time()
         self._add_days_since_published_to_article_events()
@@ -247,10 +286,14 @@ class PublicationStats(object):
 
         for post in self.article_events["data"]["post"]:
             # claculate how old was the article on the date this was collected
-            publish_date = datetime.fromisoformat(self.story_stats[post["id"]]["firstPublishedAt"])
+            publish_date = datetime.fromisoformat(
+                self.story_stats[post["id"]]["firstPublishedAt"]
+            )
             for daily_stat in post["dailyStats"]:
                 post_date = datetime.fromisoformat(daily_stat["periodStartedAt"])
-                days_since_published = (post_date - publish_date).days if post_date > publish_date else 0
+                days_since_published = (
+                    (post_date - publish_date).days if post_date > publish_date else 0
+                )
                 daily_stat["daysSincePublished"] = days_since_published
 
     def _add_title_to_article_events(self):
@@ -359,9 +402,9 @@ class PublicationStats(object):
         # mash up the visitors
         for visitor in self.visitor_stats:
             if visitor["timeWindowStart"] in self.publication_events:
-                self.publication_events[visitor["timeWindowStart"]]["dailyUniqueVisitors"] = visitor[
+                self.publication_events[visitor["timeWindowStart"]][
                     "dailyUniqueVisitors"
-                ]
+                ] = visitor["dailyUniqueVisitors"]
             else:
                 self.publication_events[visitor["timeWindowStart"]] = {
                     "dailyUniqueVisitors": visitor["dailyUniqueVisitors"]
@@ -373,10 +416,12 @@ class PublicationStats(object):
             self._load_stat_grabber()
         if self.view_stats is None:
             self._load_view_stats()
-        if self.visitor_stats is None:
-            self._load_visitor_stats()
-        if self.article_events is None:
-            self._load_publication_events()
+        if self.blog_stats_viewers_readers is None:
+            self._load_blog_stats_viewer_readers()
+        # if self.visitor_stats is None:
+        #     self._load_visitor_stats()
+        # if self.article_events is None:
+        #     self._load_publication_events()
 
         # convert the json to a dataframe
         # df = json_normalize(
@@ -388,14 +433,16 @@ class PublicationStats(object):
         # csv = csv_str.splitlines()
 
         csv = []
-        header = "timeWindowStart,views,ttr,dailyUniqueVisitors"
+        header = "timeWindowStart,viewers,readers"
         csv.append(header)
-        for key, value in self.publication_events.items():
+        for key, value in self.blog_stats_viewers_readers.items():
             event_date = key
-            views = value["views"] if "views" in value else 0
-            ttr = value["ttr"] if "ttr" in value else 0
-            daily_unique_visitors = value["dailyUniqueVisitors"] if "dailyUniqueVisitors" in value else ""
-            csv.append(f"{event_date},{views},{ttr},{daily_unique_visitors}")
+            viewers = value["viewers"] if "viewers" in value else 0
+            readers = value["readers"] if "readers" in value else 0
+            # daily_unique_visitors = (
+            #     value["dailyUniqueVisitors"] if "dailyUniqueVisitors" in value else ""
+            # )
+            csv.append(f"{event_date},{viewers},{readers}")
 
         return csv
 

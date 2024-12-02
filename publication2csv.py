@@ -8,7 +8,9 @@ from datetime import date, timedelta
 
 @click.command()
 @click.argument("publication_name", type=str, required=True)
-@click.option("--folder", type=str, default="output", help="folder to save the csv file")
+@click.option(
+    "--folder", type=str, default="output", help="folder to save the csv file"
+)
 @click.option("--sid", type=str, default="", help="your Medium session id from cookie")
 @click.option("--uid", type=str, default="", help="your Medium user id from cookie")
 @click.option(
@@ -50,10 +52,12 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
     click.echo("Getting publication: " + publication_name)
     click.echo("Start date: " + str(date_from))
     click.echo("Stop date: " + str(date_to))
-    # click.echo("Session id: " + sid)
-    # click.echo("User id: " + uid)
+    click.echo("Session id: " + sid)
+    click.echo("User id: " + uid)
 
-    publication = PublicationStats(publication_name, sid, uid, date_from, date_to, now, allready_utc)
+    publication = PublicationStats(
+        publication_name, sid, uid, date_from, date_to, now, allready_utc
+    )
 
     click.echo("Getting story summary")
     csv = publication.get_story_stats_csv()
@@ -68,9 +72,9 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
     # click.echo("Getting publication visitors")
     # pub_visitors = publication.get_publication_visitors()
 
-    click.echo("Getting publication events")
+    click.echo("Getting publication stats viewers and readers")
     csv = publication.get_aggregate_events_csv()
-    filename = f"{publication_name}-events.csv"
+    filename = f"{publication_name}-stats_viewers_readers.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")
@@ -82,12 +86,12 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
         for line in csv:
             file.write(f"{line}\n")
 
-    click.echo("Getting article referrers")
-    csv = publication.get_article_referrers_csv()
-    filename = f"{publication_name}-article_referrers.csv"
-    with open(f"{folder}/{filename}", "w") as file:
-        for line in csv:
-            file.write(f"{line}\n")
+    click.echo("Article referrers are no longer available")
+    # csv = publication.get_article_referrers_csv()
+    # filename = f"{publication_name}-article_referrers.csv"
+    # with open(f"{folder}/{filename}", "w") as file:
+    #     for line in csv:
+    #         file.write(f"{line}\n")
 
 
 if __name__ == "__main__":
