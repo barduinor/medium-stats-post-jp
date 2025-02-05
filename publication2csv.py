@@ -61,7 +61,8 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
 
     click.echo("Getting story summary")
     csv = publication.get_story_stats_csv()
-    filename = f"{publication_name}-story.csv"
+    # filename = f"{publication_name}-story.csv"
+    filename = f"{publication_name}-articles.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")
@@ -74,14 +75,15 @@ def main(publication_name, folder, sid, uid, date_from, date_to):
 
     click.echo("Getting publication stats viewers and readers")
     csv = publication.get_aggregate_events_csv()
-    filename = f"{publication_name}-stats_viewers_readers.csv"
+    # filename = f"{publication_name}-stats_viewers_readers.csv"
+    filename = f"{publication_name}-viewers-readers.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")
 
     click.echo("Getting article events")
     csv = publication.get_article_events_csv()
-    filename = f"{publication_name}-article_events.csv"
+    filename = f"{publication_name}-article-events.csv"
     with open(f"{folder}/{filename}", "w") as file:
         for line in csv:
             file.write(f"{line}\n")
