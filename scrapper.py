@@ -1,9 +1,10 @@
 """ medium screper methods"""
 
 from datetime import datetime, date
-from medium_stats.scraper import StatGrabberPublication
+from scraper_custom import StatGrabberPublication
 from pandas import DataFrame, json_normalize
 from otosky import build_summary_stats_payload, build_blog_events_payload
+from tqdm import tqdm
 
 
 class PublicationStats(object):
@@ -146,9 +147,9 @@ class PublicationStats(object):
 
         # Convert the list to a dict indexed by the post id
         self.story_stats = dict()
-        for story in story_stats_list["data"]["publication"][
+        for story in tqdm(story_stats_list["data"]["publication"][
             "publicationPostsConnection"
-        ]["edges"]:
+        ]["edges"]):
             post_id = story["node"]["id"]
             self.story_stats[post_id] = {}
             # Map to columns format
@@ -214,7 +215,7 @@ class PublicationStats(object):
         view_stats_list = response.json()
 
         self.blog_stats_viewers_readers = dict()
-        for day in view_stats_list["data"]["publicationAggregateStats"]["points"]:
+        for day in tqdm(view_stats_list["data"]["publicationAggregateStats"]["points"]):
             timeWindowStart = datetime.fromtimestamp(
                 day["timestamp"] / 1000
             ).isoformat()
